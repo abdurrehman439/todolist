@@ -69,9 +69,10 @@ class Task
     public function markStatus(int $id,string $status): bool
     {
         $id         = (int)$this->db->real_escape_string((string)$id);
-        $status     = (int)$this->db->real_escape_string((string)$status);
+        $status     = $this->db->real_escape_string((string)$status);
 
         $sql        = "UPDATE tasks SET status = '$status' WHERE id = '$id'";
+       
         return $this->db->query($sql);
     }
 }
