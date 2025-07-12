@@ -1,3 +1,34 @@
+Database config 
+C:\wamp64\www\todolist\config\Database.php
+
+$hostname = 'localhost';
+$username = 'root';
+$password = '';
+$database = 'todolist_task'; 
+
+
+Php version : 8.2
+
+Folder Structure :
+
+C:\wamp64\www\todolist
+
+
+    config/autoload.php
+    config/Database.php
+    controllers/TaskController.php
+    models/Task.php
+    routes/api.php
+    views/
+    db/todolist_task.sql
+    public
+    .htaccess
+    index.php
+    README.md
+
+
+How to test the API (via Postman )
+
 # todolist
 
 Api for todo list 
